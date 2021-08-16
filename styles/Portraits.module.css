@@ -1,0 +1,36 @@
+.container {
+  height: 80%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.users {
+  background-color: snow;
+  padding: 9px;
+  margin: 1px;
+  font-size: larger;
+}
+.users:hover {
+  animation: change 0.3s linear running both;
+}
+
+@keyframes change {
+  0% {
+    background: snow;
+    box-shadow: none;
+    transform: translateX(80px);
+    /* border-radius: none; */
+    color: black;
+  }
+
+  100% {
+    color: white;
+
+    transform: translateX(10px);
+    /* border-radius: 0 10px 0 10px; */
+    box-shadow: 2px 2px 10px black;
+    background: black;
+  }
+}
